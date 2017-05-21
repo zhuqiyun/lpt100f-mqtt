@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+".\output\startup.o"
+".\output\app_main.o"
+"..\sdk\1.51\libs\LPB100Kernel.lib"
+".\output\usr.o"
+".\output\usr_mqtt.o"
+".\output\utils.o"
+".\output\ringbuf.o"
+".\output\mqttconnectclient.o"
+".\output\mqttconnectserver.o"
+".\output\mqttdeserializepublish.o"
+".\output\mqttformat.o"
+".\output\mqttpacket.o"
+".\output\mqttserializepublish.o"
+".\output\mqttsubscribeclient.o"
+".\output\mqttsubscribeserver.o"
+".\output\mqttunsubscribeclient.o"
+".\output\mqttunsubscribeserver.o"
+".\output\mqtthsf.o"
+".\output\mqttclient.o"
+--strict --scatter "LPBS2W.sct"
+--keep *.o(.mach*.init) --keep *.o(.shell*.cmd) --keep *.o(.sched.stub*) --keep *.o(.driver*.isr) --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\output\LPT100FS2W.map" -o .\output\LPT100FS2W.axf

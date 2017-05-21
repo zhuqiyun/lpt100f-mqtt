@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.23.0.0
+Copyright (C) 2017 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 1 1, 1, LIC=03CWF-6TL99-U42S7-E7RPI-2GW9K-1C7BA
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.23
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 4 (build 422)
+Assembler:       Armasm.exe V5.06 update 4 (build 422)
+Linker/Locator:  ArmLink.exe V5.06 update 4 (build 422)
+Library Manager: ArmAr.exe V5.06 update 4 (build 422)
+Hex Converter:   FromElf.exe V5.06 update 4 (build 422)
+CPU DLL:         SARMCM3.DLL V5.23
+Dialog DLL:      DCM.DLL V1.15.0.0
+Target DLL:      UL2CM3.DLL V1.159.7.0
+Dialog DLL:      TCM.DLL V1.27.0.0
+ 
+<h2>Project:</h2>
+D:\hanfeng\lpt100f\LPB100-HSF-V1.51\projects\LPT100FS2W.uvproj
+Project File Date:  05/14/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 4 (build 422)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'LPT100FS2W'
+compiling app_main.c...
+..\src\app_main.c(278): warning:  #111-D: statement is unreachable
+  			break;
+..\src\app_main.c(389): warning:  #111-D: statement is unreachable
+  		return 0;
+..\src\app_main.c: 2 warnings, 0 errors
+linking...
+LPBS2W.sct(14): warning: L6314W: No section matches pattern *.o(.mach2.init).
+LPBS2W.sct(18): warning: L6314W: No section matches pattern *.o(.mach6.init).
+LPBS2W.sct(19): warning: L6314W: No section matches pattern *.o(.mach7.init).
+LPBS2W.sct(23): warning: L6314W: No section matches pattern *.o(.shell0.cmd).
+LPBS2W.sct(25): warning: L6314W: No section matches pattern *.o(.shell2.cmd).
+Program Size: Code=420024 RO-data=27392 RW-data=8012 ZI-data=70788  
+Finished: 0 information, 5 warning and 0 error messages.
+FromELF: creating hex file...
+After Build - User command #1: fromelf.exe --bin --output ./output/LPT100FS2W.bin ./output/LPT100FS2W.axf
+After Build - User command #2: LPB100_IMG_Tools.exe ./output/LPT100FS2W.bin ./output/LPT100FS2W_UPGARDE.bin
+".\output\LPT100FS2W.axf" - 0 Error(s), 7 Warning(s).
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
